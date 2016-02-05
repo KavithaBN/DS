@@ -1,0 +1,12 @@
+package eclipsepackage;
+
+import java.util.*;
+
+public class uniquecharinstring {
+	public static boolean main(String str){
+		
+		
+		boolean[] char_set = new boolean[256];
+		
+	}
+}

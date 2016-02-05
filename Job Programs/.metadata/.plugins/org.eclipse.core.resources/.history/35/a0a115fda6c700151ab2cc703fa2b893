@@ -1,0 +1,41 @@
+package eclipsepackage;
+
+import java.util.*;
+
+class llistreverse{
+
+static Node head;
+
+static class Node{
+int data;
+Node next;
+
+}
+
+public static void main(String[] args)
+{
+linkedlist list= new linkedlist();
+list.head = new node(10);
+list.head.next = new node(12);
+list.head.next.next = new node(25);
+list.head.next.next.next = new node(13);
+list.head.next.next.next.next = new node(29);
+system.out.println("The linked list is");
+list.print(head);
+
+list.reverse();
+system.out.println("After reversal:");
+list.print(head);
+
+}
+
+void print(Node node)
+{
+while(node!=NULL)
+{
+system.out.println(node.data);
+node= node.next;
+}
+}
+
+

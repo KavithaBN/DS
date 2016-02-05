@@ -1,0 +1,12 @@
+package eclipsepackage;
+
+import java.util.*;
+
+public static void main(String[] args)
+{
+linkedlist list= new linkedlist();
+list.head = new node(10);
+
+
+}
+

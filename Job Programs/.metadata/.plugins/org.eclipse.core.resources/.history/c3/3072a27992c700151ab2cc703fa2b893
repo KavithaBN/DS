@@ -1,0 +1,3 @@
+package eclipsepackage;
+
+printf("enter the values of A and B\n");

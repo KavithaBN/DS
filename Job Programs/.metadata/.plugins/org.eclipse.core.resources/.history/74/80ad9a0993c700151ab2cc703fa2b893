@@ -1,0 +1,7 @@
+package eclipsepackage;
+
+public static void main(String[] args)
+{
+
+printf("enter the values of A and B\n");
+}

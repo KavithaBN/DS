@@ -1,0 +1,22 @@
+package eclipsepackage;
+
+import java.util.*;
+
+/**
+ * @author Arvind
+ *
+ */
+public class uniquecharinstring {
+	public static boolean main(String str){
+		System.out.println("Enter the imput string\n");
+		Scanner scan = new Scanner(System.in);
+		int n= scan.nextInt();
+		 boolean[] char_set = new boolean[256];
+		for (int i=0; i<str.length(); i++) {
+			int val = str.charAt(i);
+			if (char_set[val])
+				return false;
+			char_set[val]= true;
+		
+	}return true;
+}}
