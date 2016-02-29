@@ -30,9 +30,12 @@ public class addnumbersinarrya
 
 public static int sumarray(int[] a,int n)
 {
+	
+	
 	if(n==0)
 		return a[n];
 	else
-		return  a[n]+sumarray(a,n-1);	
+		return  a[n]+sumarray(a,n-1);
+	
 }
 }
