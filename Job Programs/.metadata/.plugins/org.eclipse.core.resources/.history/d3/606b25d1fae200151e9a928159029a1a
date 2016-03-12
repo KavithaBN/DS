@@ -1,0 +1,8 @@
+package eclipsepackage;
+
+import java.util.*;
+
+public class Inorderinsertiontree
+{
+	class tree{
+}

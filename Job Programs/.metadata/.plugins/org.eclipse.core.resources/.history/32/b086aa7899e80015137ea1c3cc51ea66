@@ -1,0 +1,18 @@
+package eclipsepackage;
+
+import java.util.*;
+
+
+public class multiplication
+{
+   public static void main(String args[])
+   {
+	   int a=1,b=1;
+	   int result = 1;
+      System.out.println("Enter two numbers");
+     
+  result =  a*b;
+ 
+         System.out.println("Mutli of two number is = "+result);
+      }
+   }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Question 3</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body><div>
+<header>Question 3</header>
+<aside>
+<br/>"<br/>Twitter wants more cash. The company announced two <mark id ="blank1" onmouseover="displayOption1();">$____________</mark> million debt offerings in a filling today, each with a potential $100 provided that the
+sales are oversubscribed. Assuming full tip, including the $100 million booster, <mark id ="blank2" onmouseover	="displayOption2();">_______</mark> will raise up to $1.5 billion with the two offerings.<br/><br/>"
+<br/>
+Source: http://techcrunch.com/2014/09/10/twitter-to-raise-up-to-1-5b-in-debt-offerings/
+</aside>
+<br>
+<section id="Question">As per the latest twitter news, complete the article snippet given by selecting appropriate choices for the blanks.</section>
+<br>
+<form name="form1">
+<div id="correct1" data-correct1="1">
+<div id="correct2" data-correct2="1">
+<table id="table">
+<tr><td>
+	<label class="option1"><input type="radio" name="option1" value="$650" onclick="populate1()">
+	Option 1 Mark 1: $650
+	</label></td>
+	<td>
+	<label class="option2"><input type="radio" name="option2" value="Twitter" onclick="populate2()">
+	Option 1 Mark 2: Twitter</label></td>
+	</tr>
+	<tr><td>
+	<label class="option1"><input type="radio" name="option1" value="$550" onclick="populate1()">
+	Option 2 Mark 1: $550
+	</label></td>
+	<td>
+	<label class="option2"><input type="radio" name="option2" value="Google" onclick="populate2()">
+	Option 2 Mark 2: Google</label></td>
+	</tr>
+	<tr><td>
+	<label class="option1"><input type="radio" name="option1" value="$650" onclick="populate1()">
+	Option 3 Mark 1: $650</label>
+	</td>
+	<td>
+	<label class="option2"><input type="radio" name="option2" value="Facebook" onclick="populate2()">
+	Option 3 Mark 2: Facebook</label></td>
+	</tr>
+</table>
+<br>
+<footer>
+	<button type="button" id="button" onclick="constructQuery(3);">Submit & Next Question</button>
+	<button type="reset" id="button">Cancel & Clear Selection</button>
+</footer>
+</div>
+</div>
+</form>
+<script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>

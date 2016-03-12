@@ -1,0 +1,47 @@
+package eclipsepackage;
+
+import java.util.Scanner;
+import java.util.Stack;
+public class paranthesischeck {
+    public static boolean isBalanced(String in)
+    {
+        Stack<Character> st = new Stack<Character>();
+
+        for(char chr : in.toCharArray())
+        {
+            switch(chr) {
+
+                case '{':
+                case '(':
+                case '[':
+                    st.push(chr);
+                    break;
+
+                case ']':
+                    if(st.isEmpty() || st.pop() != '[') 
+                        return false;
+                    break;
+                case ')':
+                    if(st.isEmpty() || st.pop() != '(')
+                        return false;
+                    break;
+                case '}':
+                    if(st.isEmpty() || st.pop() != '{')
+                        return false;
+                    break;
+            }
+        }
+        return st.isEmpty();
+    }
+    public static void main(String args[]) {
+    	
+    	//String tokens = "[[][][]Anfield[[]([])[]]becons()]";
+    	char[] tokens = "[[][][]"
+        if(tokens.length != 0) {
+            if(isBalanced(tokens[0]))
+                System.out.println(tokens[0] + " is balanced");
+            else
+                System.out.println(tokens[0] + " is not balanced");
+        }
+    }
+}

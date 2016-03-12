@@ -1,0 +1,48 @@
+<!DOCTYPE Html>
+<html>
+<head>
+<title>Survey</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header>Survey</header>
+<section id="Question" style="padding-left:3%;padding-bottom:0%;">How did you like the center?</section>
+<form>
+<table style="padding-left:1%;">
+<tr><td style="vertical-align:top;">Comments : </td><td style="width:75%"><textarea cols="60" rows="4"></textarea></td></tr>
+</table>
+<label style="padding-left:3%;">Select Text Area Location :<label>
+<table width="70%" height="20%" style="padding-left:1%;">
+<tr><td width="16%">
+	City :</td><td width="25%">
+	<input list="city" name="city">
+	<datalist id="city">
+		<option value="San Jose">
+		<option value="San Francisco">
+		<option value="Mountain View">
+		<option value="Palo Alto">
+		<option value="Fremont">
+	</datalist>
+	</td>
+	<td width="30%">
+	Room Number# : </td><td width="50%">
+	<input list="room" name="room">
+	<datalist id="room">
+		<option value="Room 210">
+		<option value="Room 110">
+		<option value="Room 410">
+		<option value="Room 337">
+		<option value="Room 510">
+	</datalist>
+	</td>
+	</tr>
+	</table>
+<footer>
+	<button type="button" id="button" onclick="constructQuery(5);">Submit & Get Score</button>
+	<button type="button" id="button" onclick="constructQuery(5);">Skip & Get Score</button>
+</footer>
+</form>
+<script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>

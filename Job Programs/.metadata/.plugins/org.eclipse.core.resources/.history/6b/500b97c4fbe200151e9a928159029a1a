@@ -1,0 +1,30 @@
+package eclipsepackage;
+
+import java.util.*;
+
+public class Inorderinsertiontree
+{
+	class tree{
+		class Node{
+			int key;
+			Node left,right;
+			public Node (int d)
+			{
+				key =d;
+				left = right =null;
+			}
+		}
+	}
+	
+	
+	node root;
+	bst()
+	{
+		root =null;
+	
+	}
+	
+	void insert (int key)
+	{
+	
+}

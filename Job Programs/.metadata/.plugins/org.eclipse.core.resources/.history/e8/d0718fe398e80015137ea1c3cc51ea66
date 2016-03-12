@@ -1,0 +1,20 @@
+package eclipsepackage;
+
+import java.util.*;
+
+
+public class multiplication
+{
+   public static void main(String args[])
+   {
+      int a,b;
+ 
+      System.out.println("Enter two numbers");
+     
+ 
+     int result = a*b;
+ 
+         System.out.println("Factorial of "+result+" is = "+result);
+      }
+   }
+}

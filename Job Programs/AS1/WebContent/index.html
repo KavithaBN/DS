@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39">
+        <title>
+            User Login
+        </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript">
+        function valAndGotoNext(){
+        var uname = document.getElementById('uname').value;
+        var pwd = document.getElementById('pwd').value;
+        if(uname == "" || pwd == ""){
+                alert("Username and Password field cannot be blank.");
+        }
+        else {
+                var url = "Question1.html?name="+uname+"&qa=0&qc=0&ra=0&rc=0&va=0&vc=0";
+                document.location.href = url;
+        	}
+        }
+        </script>
+    </head>
+    <body style="width:50%;margin-left:25%;">
+        <header>
+            User Login
+        </header>
+        <table style="padding:5%;padding-bottom:1%;margin:20%;margin-bottom:1%;margin-top:5%;width:60%;align:middle">
+            <tr>
+                <td>
+                    Username      :<br>
+                </td>
+                <td>
+                    <input type="text" id="uname" name="uname"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password :
+                </td>
+                <td>
+                    <input type="password" id="pwd" name="pwd">
+                </td>
+            </tr>
+        </table>
+        <table style="margin:20%;margin-bottom:5%;margin-top:1%;width:60%;align:middle">
+            <tr>
+                <td>
+                    <a href="#">Create Account/Forgot?</a>
+                </td>
+                <td>
+                    <button type="button" id="button" onclick="valAndGotoNext();">Login</button>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="script/script.js"> </script>
+        
+    </body>
+</html>

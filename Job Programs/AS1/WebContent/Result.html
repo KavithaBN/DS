@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Score Card</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onpageshow="populate();">
+<header>Score Card</header>
+<form>
+<section style="margin:2%;padding:2%;border:2px solid black;">
+<details><summary>Quantitative Section</summary>
+<p><b>Number of Questions Answered : </b><span id="qa"></span></p>
+<p><b>Number of Correct Answers : </b><span id="qc"></span></p>
+<p><b>Score : </b><span id="qs"></span></p></details>
+<details><summary>Reading Section</summary>
+<p><b>Number of Questions Answered : </b><span id="ra"></span></p>
+<p><b>Number of Correct Answers : </b><span id="rc"></span></p>
+<p><b>Score : </b><span id="rs"></span></p></details>
+<details><summary>Audio/Video Section</summary>
+<p><b>Number of Questions Answered : </b><span id="va"></span></p>
+<p><b>Number of Correct Answers : </b><span id="vc"></span></p>
+<p><b>Score : </b><span id="vs"></span></p></details>
+</section>
+<p style="text-align:center"><b>Thank You!!</b><br/><br/>
+	<button type="button" id ="finish">Finish</button></p>
+</form>
+<script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>

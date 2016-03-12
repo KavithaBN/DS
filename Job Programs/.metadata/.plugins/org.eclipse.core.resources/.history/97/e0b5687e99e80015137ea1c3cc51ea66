@@ -1,0 +1,21 @@
+package eclipsepackage;
+
+import java.util.*;
+
+
+public class multiplication
+{
+   public static void main(String args[])
+   {
+	   int a=1,b=1;
+	   int result = 1,n;
+      System.out.println("Enter two numbers");
+      Scanner in = new Scanner(System.in);
+      
+      n = in.nextInt();
+     
+  result =  a*b;
+ 
+         System.out.println("Mutli of two number is = "+result);
+      }
+   }

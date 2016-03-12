@@ -1,0 +1,67 @@
+package eclipsepackage;
+
+import java.util.*;
+
+
+
+public class Inorderinsertiontree
+{
+	class tree{
+		class Node{
+			int key;
+			Node left,right;
+			public Node (int d)
+			{
+				key =d;
+				left = right =null;
+			}
+		}
+	
+	static Node head;
+	
+	Node insert(Node root,int key)
+	{
+		if(root==null)
+		{
+			root = new Node(key);
+		return root;
+		}
+	
+	if(key <root.key)
+	{
+		root.left =inserttree(root.left,key);
+	}
+		else if(key>root.key)
+		{
+			root.right =inserttree(root.right,key);
+		}
+	return root;
+}
+	Void inorder()
+	{
+		inorderrec(root);
+	}
+	void inorderrec (Node root)
+	{
+		if(root!=null)
+		{
+			inorderrec(root.left);
+			System.out.println(root.key);
+			inorderrec(root.right);
+		}
+	}
+	public static void main(String args[])
+	{
+		Inorderinsertiontree tree = new Inorderinsertiontree();
+		Node root = null;
+	     root = tree.insert(root, 4);
+		tree.insert(root,50);
+		tree.insert(root,90);
+		tree.insert(root,10);
+		tree.insert(root,80);
+		tree.insert(root,20);
+		tree.insert(root,100);
+		tree.inorder();
+		
+	}
+}}

@@ -1,0 +1,65 @@
+package eclipsepackage;
+
+import java.util.*;
+
+import eclipsepackage.minelementbinarytree.Node;
+
+public class Inorderinsertiontree
+{
+	class tree{
+		class Node{
+			int key;
+			Node left,right;
+			public Node (int d)
+			{
+				key =d;
+				left = right =null;
+			}
+		}
+	
+	static Node root;
+	
+	
+	
+	
+	
+	Node inserttree(Node root,int key)
+	{
+		if(root==null)
+		{
+			root = new Node(key);
+		return root;
+		}
+	}
+	if(key <root.key)
+		root.left =inserttree(root.left,key)
+		else if(key>root.key)
+			root.right =inserttree(root.right,key);
+	return root;
+}
+	Void inorder()
+	{
+		inorderrec(root);
+	}
+	void inorderrec (Node root)
+	{
+		if(root!=null)
+		{
+			inorderrec(root.left);
+			System.out.println(root.key);
+			inorderrec(root.right);
+		}
+	}
+	public static void main(string[] args)
+	{
+		Inorderinsertiontree tree = new Inorderinsertiontree();
+		tree.inserttree(root,50);
+		tree.inserttree(root,90);
+		tree.inserttree(root,10);
+		tree.inserttree(root,80);
+		tree.inserttree(root,20);
+		tree.inserttree(root,100);
+		tree.inorder();
+		
+	}
+}

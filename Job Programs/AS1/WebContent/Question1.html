@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Question 1</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div>
+<header>Question 1</header>
+<section id="Question">Given points (x1, y1) and (x2, y2) select the formula to find the equation of the given line</section>
+<img src="graph.jpg" alt="Straight Line Graph" align="right" style="float:right;">
+<form>
+<div id="correct" data-correct="4">
+<table id="table">
+<tr>
+<td>
+	<input type="radio" name="radioGroup" value="option1">
+	<math xmlns="http://www.w3.org/1998/Math/MathML">
+		<mrow>
+			<mi>y</mi>
+			<mo>⁢=</mo>
+			<mrow><mi>m</mi><mi>x</mi></mrow>
+			<mo>+</mo>
+			<mi>c</mi>
+		</mrow>
+	</math>
+	</td>
+	<td>
+	<input type="radio" name="radioGroup" value="option2">
+	<math xmlns="http://www.w3.org/1998/Math/MathML">	
+		<mrow>
+			<msup>
+				<mfenced><mrow>
+					<mi>x</mi>
+					<mo>   ⁢                                           -</mo>
+					<mi>h</mi>
+				</mrow></mfenced>
+				<mn>2</mn>
+			</msup>
+			<mo> + </mo>
+			<msup>
+				<mfenced><mrow>
+					<mi>y</mi>
+					<mo> ⁢- </mo>
+					<mi>k</mi>
+				</mrow></mfenced>
+				<mn>2</mn>
+			</msup>
+			<mo> = </mo>
+			<mrow><msup>
+				<mi>r</mi>
+				<mn>2</mn>
+			</msup></mrow>
+		</mrow>
+	</math>
+	</td>
+</tr>
+<tr>
+	<td>	
+	<input type="radio" name="radioGroup"  value="option3">
+	<math xmlns="http://www.w3.org/1998/Math/MathML">	
+		<mrow>
+			<mi>y</mi>
+			<mo>⁢- </mo>
+			<msub><mi>y</mi><mn>1</mn></msub>
+			<mo> = </mo>
+			<mi>m</mi>
+			<mfenced><mrow>
+				<mi>x</mi>
+				<mo> ⁢- </mo>
+				<msub><mi>x</mi><mn>1</mn></msub>
+			</mrow></mfenced>
+		</mrow>
+	</math>
+	</td>
+	<td>
+	<input type="radio" name="radioGroup"  value="option4">
+	<math xmlns="http://www.w3.org/1998/Math/MathML">
+		<mrow>
+			<mi>y</mi>
+			<mo>⁢-</mo>
+			<msub><mi>y</mi><mn>2</mn></msub></mrow>
+			<mo> = </mo>
+			<mfrac>
+				<mrow>
+					<msub><mi>y</mi><mn>2</mn></msub>
+					<mo> - </mo>
+					<msub><mi>y</mi><mn>1</mn></msub>
+				</mrow>
+				<mrow>
+					<msub><mi>x</mi><mn>2</mn></msub>
+					<mo> - </mo>
+					<msub><mi>x</mi><mn>1</mn></msub>
+				</mrow>
+			</mfrac>
+			<mfenced><mrow>
+				<mi>x</mi>
+				<mo> ⁢- </mo>
+				<msub><mi>x</mi><mn>2</mn></msub>
+			</mrow></mfenced>
+		</mrow>
+	</math>
+	</td>
+	</tr>
+</table>
+<footer>
+	<button type="button" id="button" onclick="constructQuery(1);">Submit & Next Question</button>
+	<button type="reset" id="button">Cancel & Clear Selection</button>
+</footer>
+</div>
+</form>
+</div>
+</div>
+<script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>

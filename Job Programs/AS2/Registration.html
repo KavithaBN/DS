@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+<script src="modernizr.js"></script>
+<script src="reg-lib.js"></script>
+<script src="registration.js"></script>
+</head>
+<body>
+<form name="form1">
+<table align="center" frame="box" style="border-radius: 9px;">
+
+	<tr><th bgcolor="cyan" style="border-radius: 9px;"><h3>Registration Form</h3></th><tr>
+	<tr><td>&nbsp;</td><tr>
+					
+<tr><td>
+		 First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" id="fname" name="first" placeholder="Enter First Name" style="width: 250px; height: 20px;">
+	<br><br>
+ 		 Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" id="lname" name="last" placeholder="Enter Last Name" style="width: 250px; height: 20px;">
+	<br><br>
+ 		 Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="email" id="mail" name="email" placeholder="Enter Email id" title="Enter valid email address" style="width: 250px; height: 20px;" onblur="isValidEmail()">
+	<br><br>
+ 		 Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 	<input type="password" id="pwd" name="password" pattern="(?=.*\W)(?=.*[a-z])(?=.*[A-Z]).{8,24}" onkeyup="checkPwdStrength(this)" title="Must contain at least 3 uppercase, 2 lowercase and 2 special characters and min 8 & max 24 characters" style="width: 250px; height: 20px;">
+ 	
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ 		<progress  id="pwdStrength" value="0" max="100" style="visibility: hidden;background-color: green;"></progress><br><br>
+ 		 Confirmed Password &nbsp;&nbsp;&nbsp;
+ 	<input type="password" id="cpwd" name="confirm_password" placeholder="Must be same as password" style="width: 250px; height: 20px;"
+ 	 onkeyup="validatePassword();">
+ 	 <span id="confirmMessage" class="confirmMessage"></span>
+ 	<br><br>
+ 		 D.O.B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 	<input type="date" id="d" name="dob" style="width: 250px; height: 20px;">
+ 	<br><br>
+ 		 D.O.B with time &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 	<input type="datetime" id="dt" name="dob_time" style="width: 250px; height: 20px;">
+ 	<br><br>
+ 		 Local D.O.B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 	<input type="datetime-local" id="ldt" name="dob_time_local" style="width: 250px; height: 20px;">
+ 	<br><br>
+ 		 SSN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 	<input type="text" id="SSN" name="ssn" pattern="\d{3}[\-]\d{2}[\-]\d{4}" title="Must be in format nnn-nn-nnnn" style="width: 250px; height: 20px; border-color: " placeholder="XXX-XX-XXXX">
+ 	<br><br>
+ 		 Telephone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 	<input type="tel" id="phn" name="phone_no" title="Must be in format nnn-nnn-nnnn" style="width: 250px; height: 20px;" placeholder="XXX-XXX-XXXX" onblur="isPhoneNumberFormatValid()">
+ 	<br><br>
+ 		 Credit Card No &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 	<input type="text" id="card" name="card_no" pattern="([0-9]{12})|([0-9]{16})" style="width: 250px; height: 20px;">
+ 	<br><br><br>
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 	
+ 	<input type="button" name="create"   value="Create" style="width: 175px; border-radius: 5px;" onClick="initRegObj(); ">
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 	<input type="reset" id="submit" name="create" value="Reset" style="width: 175px; border-radius: 5px;">
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+
+</table>
+</form>
+</body>
+</html>
